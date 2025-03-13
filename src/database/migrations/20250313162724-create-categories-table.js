@@ -1,4 +1,5 @@
 
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
@@ -23,13 +24,13 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       },
-     });
-     
+      });
+    
   },
 
   async down (queryInterface) {
     
-     await queryInterface.dropTable(' categories');
-    
+      await queryInterface.dropTable('categories');
+  
   }
 };
